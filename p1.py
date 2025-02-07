@@ -18,10 +18,6 @@ if __name__ == '__main__':
     z = int(input())
     n = int(input())
     
-    l1 = [[x,y,z] for x in [0,1] for y in [0,1] for z in [0,1] if(x+y+z) != n ]
-    l2 = [[x,y,z] for x in [0,1,2] for y in [0,1,2] for z in [0,1,2] if (x+y+z) != n]
+    l1 = [[i,j,k] for i in range(0,x+1) for j in range(0,y+1) for k in range(0,z+1) if (i+j+k) != n]
+    print(l1)
     
-    if x==1:
-        print(l1)
-    else:
-        print(l2)
