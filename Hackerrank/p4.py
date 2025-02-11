@@ -6,45 +6,28 @@ if __name__ == '__main__':
     n = int(input())
     num = list(map(int, input().split()))
 
-    for i in range(len(num)-1):
-        if num[i] in num:
-            high_num = num[i]
-            # print(high_num)
-        
-        if high_num > num[i+1]:
-            high_num = high_num 
-            # print(high_num)
-        else:
-            high_num = num[i+1]
-            # print(high_num)
-        
-        if high_num == 9:
-            if high_num > num[i+1]:
-                high_num = high_num
-            else:
-                high_num = num[i+1]
-                
-        print(high_num, end=' ')
+    if num[0]:
+        high_num = num[0]
 
-        
-        
 
+    for i in range(len(num)):
     
-#    print(new_num)
-        #     print(i)
-        
-        # elif new_num > num[i+1]:
-        #     new_num = num[i+1]
-        #     print(i)
-        
-        # elif new_num > num[i+1]:
-        #     new_num = num[i+1]
-        #     print(i)
-        
-        # elif new_num > num[i+1]:
-        #     new_num = num[i+1]
-        #     print(i)
+        if high_num < num[i]:
+            high_num = num[i]
+    org_high = high_num
 
-        # elif new_num > num[i+1]:
-        #     new_num = num[i+1]
-        #     print(i)
+
+    for i in range(len(num)):
+        if num[i] != org_high:
+            new_high = num[i]
+            break
+
+    for i in range(len(num)):
+        if num[i] == org_high:
+            continue
+        
+        #print(num)
+        if new_high < num[i]:
+            new_high = num[i]
+
+    print(new_high)
