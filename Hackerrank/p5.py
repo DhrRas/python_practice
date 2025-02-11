@@ -7,5 +7,8 @@ if __name__ == "__main__":
    for x in range(int(input())):
       name = input()
       score = float(input())
-      for name,score in x:
-         print(list[name,score])
+      
+   for name in range(input()):
+      for score in range(i+1):
+         students = [[]*score]*name
+   print(students)
