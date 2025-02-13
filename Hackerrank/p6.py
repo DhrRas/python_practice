@@ -8,13 +8,14 @@ if __name__ == '__main__':
         student_marks[name] = scores
     query_name = input('')
 
-    print(query_name)
-    print(student_marks.key)
-    print(len(student_marks[name]))
+    # print(query_name)
+    #print(student_marks.keys())
+    #print(student_marks[name])
+
+    total = 0
+    for x in range(len(scores)):
+        if query_name == student_marks.keys():
+            total += scores[x]
+            result = total / len(scores)
     
-    '''for x in range(len(marks_list)):
-        if query_name in marks_list:    
-            total = sum(marks_list)
-            average = total / len(marks_list)
-            print(f'{average:.2f}')
-            '''
+    print(result)
