@@ -1,14 +1,13 @@
 '''In this challenge, the user enters a string and a substring.'''
+
+
 def count_substring(string, sub_string):
-    for i in range(0, len(string)):
+    count = 0
+    for i in [string, sub_string]:
         if string[i] == sub_string[i]:
-            for j in range(0,len(sub_string)):     
-                 word = sub_string[j] + string[j]
-                 word_len = len(word)
-                 
-        else:
-                 break
-        return word_len   
+            if len(sub_string) == len(string) and sub_string[:len(sub_string)] == string[string[i]:len(sub_string)+2]:
+                count += 1
+        print(count)   
 
 
 if __name__ == '__main__':
