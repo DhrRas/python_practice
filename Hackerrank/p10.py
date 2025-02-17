@@ -3,22 +3,18 @@ it can check if a sring is composed of alphabetical characters,
 alphanumeric characters, digit, etc...'''
 
 if __name__ == "__main__":
-    s = input()
-
-for i in s:
-    pass
-
-    
-    # for char in string:
-    #     if char == string.isalnum():
-    #         print(True)
-    #     elif char == string.isalpha():
-    #         print(True)
-    #     elif char == string.isdigit():
-    #         print(True)
-    #     elif char == string.islower():
-    #         print(True)
-    #     elif char == string.isupper():
-    #         print(True)
-    #     else:
-    #         print(False)
+    string = input()
+        
+    for char in string.split():
+        if string.isalnum() == True:
+            print(True)
+        elif string.isalpha() == True:
+            print(True)
+        elif string.isdigit() == True:
+            print(True)
+        elif string.islower() == True:
+            print(True)
+        elif string.isupper() == True:
+            print(True)
+        else:
+            print(False)
