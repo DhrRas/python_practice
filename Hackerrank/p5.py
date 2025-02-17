@@ -9,6 +9,6 @@ if __name__ == "__main__":
       score = float(input())
       
    for name in range(input()):
-      for score in range(i+1):
+      for score in range(name+1):
          students = [[]*score]*name
    print(students)
