@@ -4,7 +4,9 @@ different methods are used to center, right and left adjust the text according t
 
 if __name__ == '__main__':
     thickvalue = int(input())
+    width = thickvalue
 
 for i in range(1, thickvalue+1):
-    if i % 2 == 1:
-        print(' H'*i)
+    for j in range(i):
+        if i % 2 == 1:
+            print('H'*i)
