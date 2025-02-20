@@ -11,7 +11,7 @@ import sys
 
 # complete the solve function below.
 def solve(s):
-    s2 = ' '.join(word.capitalize() for word in s.split())
+    s2 = ' '.join(word.capitalize() for word in s.split(' '))
     return s2
     
 
