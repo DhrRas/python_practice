@@ -6,7 +6,11 @@ each integer i from 1 to n:
 4. Binary '''
 
 def print_formatted(number):
-    for i in range(1,number+1):
+    width = bin(number)
+    new_width = len(width[2:])
+    # print(new_width)
+   
+    for i in range(1,number+1):    
 
         octal_value = '{0:o}'.format(i)
 
@@ -14,8 +18,9 @@ def print_formatted(number):
 
         binary_value = '{0:b}'.format(i)
 
-        print(f"{i:2}  {octal_value:2}  {hex_value:2}  {binary_value:3}")
-
+        print(f"{i:>{new_width}} {octal_value:>{new_width}} {hex_value:>{new_width}} {binary_value:>{new_width}}")
+         
+   
 if __name__ == '__main__':
     n = int(input())
     print_formatted(n)
