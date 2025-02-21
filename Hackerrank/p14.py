@@ -9,18 +9,30 @@
 
 if __name__ == '__main__':
 
-    # integer_set = set()
+    no_elements = int(input())
 
-    # no_elements = int(input())
-
-    # for i in range(1,no_elements+1):
-    #     num = integer_set.add(i)    
-
-    # print(integer_set)
+    for i in range(1,no_elements+1):
+        result = print(i,end=' ')    
     
+    print(result)
+
     No_commands = int(input())
-    actions = []
+    # actions = []
 
-    z
-    
+    for i in range(No_commands):
+        x = input('please enter action: ').split(' ')
 
+        if x[0] == 'pop':
+            y = 0
+            result.pop()
+            print(result)
+        
+        elif x[0] == 'remove':
+            y = int(x[1])
+            result.remove(y)
+            print(result)
+
+        else:
+            y = int(x[1])
+            result.discard(y)
+            print()
