@@ -12,27 +12,27 @@ if __name__ == '__main__':
     no_elements = int(input())
 
     for i in range(1,no_elements+1):
-        result = print(i,end=' ')    
+        result = i    
+        print(set(result), end=' ')
     
-    print(result)
-
+    print()
     No_commands = int(input())
     # actions = []
 
-    for i in range(No_commands):
-        x = input('please enter action: ').split(' ')
+    # for i in range(No_commands):
+    #     x = input('').split(' ')
 
-        if x[0] == 'pop':
-            y = 0
-            result.pop()
-            print(result)
+    #     if x[0] == 'pop':
+    #         y = 0
+    #         result.pop()
+    #         print(result)
         
-        elif x[0] == 'remove':
-            y = int(x[1])
-            result.remove(y)
-            print(result)
+        # elif x[0] == 'remove':
+        #     y = int(x[1])
+        #     result.remove(y)
+        #     print(result)
 
-        else:
-            y = int(x[1])
-            result.discard(y)
-            print()
+        # else:
+        #     y = int(x[1])
+        #     result.discard(y)
+        #     print(result)
