@@ -21,6 +21,6 @@ if __name__ == '__main__':
     No_commands = int(input())
     actions = []
 
-    
+    z
     
 
