@@ -1,20 +1,26 @@
-def sym_diff(set_a,set_b):
-    
-    for i in set_a:
-        if list(set_a)[i] == '':
-            set_a.remove()
-        print(i)
+# we have three methods of set.
+# viz discard, remove, pop 
+ 
+# if element doesnot exist remove raises keyerror
+# while discard doesn't raise error.
 
-
+# the same story goes with pop method too. i.e it raises 
+# keyerror if element is not present in set.
 
 if __name__ == '__main__':
-    M_size = int(input())
-    M_set = set(input())
 
-    # N_size = int(input())
-    # N_set = set(input())
+    # integer_set = set()
 
-    # result = sym_diff(M_set, N_set)
+    # no_elements = int(input())
+
+    # for i in range(1,no_elements+1):
+    #     num = integer_set.add(i)    
+
+    # print(integer_set)
     
-    # print(result)
+    No_commands = int(input())
+    actions = []
+
+    
+    
 
